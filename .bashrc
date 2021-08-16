@@ -10,6 +10,10 @@ if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
 then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
+
+PATH=$PATH:/home/azl/Code/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/
+PATH=$PATH:/home/azl/intelFPGA_lite/20.1/quartus/bin/
+
 export PATH
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
@@ -25,3 +29,5 @@ if [ -d ~/.bashrc.d ]; then
 fi
 
 unset rc
+
+export QSYS_ROOTDIR="/home/azl/intelFPGA_lite/20.1/quartus/sopc_builder/bin"
