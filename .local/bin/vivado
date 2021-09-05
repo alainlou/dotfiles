@@ -1,1 +1,2 @@
-
+#!/bin/sh
+flatpak run com.github.corna.Vivado
